@@ -11,7 +11,7 @@ import SearchIcon from "./search-icon.vue";
         </h1>
         <div class="desc">
           <p>UI美化、楼中楼、回复上下文、高赞回复、简洁模式、发送图片和表情 emoji、base64 解码</p>
-          <p>这或许就是你需要的 V2EX 脚本</p>
+          <p>这或许就是你需要的 V2EX 辅助工具</p>
         </div>
       </div>
 
@@ -36,6 +36,48 @@ import SearchIcon from "./search-icon.vue";
           <strong>免费使用</strong> ━ 所有功能均免费使用
         </div>
       </div>
+
+      <div class="app-img">
+        <div class="item">
+          <img
+              src="https://github.com/zyronon/V2Next-app/blob/6522b974033f92249f40216ec2bfef53c11fb0e5/docs/1.jpg?raw=true"
+          />
+          <span>首页</span>
+        </div>
+        <div class="item">
+          <img
+              src="https://github.com/zyronon/V2Next-app/blob/6522b974033f92249f40216ec2bfef53c11fb0e5/docs/2.jpg?raw=true"
+          />
+          <span>楼中楼回复</span>
+        </div>
+        <div class="item">
+          <img
+              src="https://github.com/zyronon/V2Next-app/blob/6522b974033f92249f40216ec2bfef53c11fb0e5/docs/3.jpg?raw=true"
+          />
+          <span>高赞回复</span>
+        </div>
+      </div>
+      <div class="app-img">
+        <div class="item">
+          <img
+              src="https://github.com/zyronon/V2Next-app/blob/6522b974033f92249f40216ec2bfef53c11fb0e5/docs/4.jpg?raw=true"
+          />
+          <span>排版管理</span>
+        </div>
+        <div class="item">
+          <img
+              src="https://github.com/zyronon/V2Next-app/blob/6522b974033f92249f40216ec2bfef53c11fb0e5/docs/5.jpg?raw=true"
+          />
+          <span>表情、图片回复</span>
+        </div>
+        <div class="item">
+          <img
+              src="https://github.com/zyronon/V2Next-app/blob/6522b974033f92249f40216ec2bfef53c11fb0e5/docs/6.jpg?raw=true"
+          />
+          <span>一键@</span>
+        </div>
+      </div>
+
 
       <div class="display">
         <video
@@ -121,10 +163,10 @@ import SearchIcon from "./search-icon.vue";
             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 48 48">
               <g fill="none" stroke-linejoin="round" stroke-width="4">
                 <path fill="#2F88FF" stroke="#000"
-                      d="M21 38C30.3888 38 38 30.3888 38 21C38 11.6112 30.3888 4 21 4C11.6112 4 4 11.6112 4 21C4 30.3888 11.6112 38 21 38Z"/>
+                      d="M21 38C30.3888 38 38 30.3888 38 21C38 11.6112 30.3888 4 21 4C11.6112 4 4 11.6112 4 21C4 30.3888 11.6112 38 21 38Z" />
                 <path stroke="#fff" stroke-linecap="round"
-                      d="M26.657 14.3431C25.2093 12.8954 23.2093 12 21.0001 12C18.791 12 16.791 12.8954 15.3433 14.3431"/>
-                <path stroke="#000" stroke-linecap="round" d="M33.2216 33.2217L41.7069 41.707"/>
+                      d="M26.657 14.3431C25.2093 12.8954 23.2093 12 21.0001 12C18.791 12 16.791 12.8954 15.3433 14.3431" />
+                <path stroke="#000" stroke-linecap="round" d="M33.2216 33.2217L41.7069 41.707" />
               </g>
             </svg>
           </div>
@@ -302,8 +344,8 @@ import SearchIcon from "./search-icon.vue";
             <div class="question-wrapper">
               <div class="question">
                 <div class="name">
-                  <search-icon class="dark"/>
-                  <search-icon class="blue"/>
+                  <search-icon class="dark" />
+                  <search-icon class="blue" />
                   为什么要加载所有回复？
                 </div>
                 <div class="desc">如果有多页回复，只解析当前页的话，那么许多楼层会找不到@的人，因为有可能@的人在前一页
@@ -313,8 +355,8 @@ import SearchIcon from "./search-icon.vue";
             <div class="question-wrapper">
               <div class="question">
                 <div class="name">
-                  <search-icon class="dark"/>
-                  <search-icon class="blue"/>
+                  <search-icon class="dark" />
+                  <search-icon class="blue" />
                   为什么有的「楼中楼」回复的楼层不正确？
                 </div>
                 <div class="desc">由于 V2EX
@@ -328,8 +370,8 @@ import SearchIcon from "./search-icon.vue";
             <div class="question-wrapper">
               <div class="question">
                 <div class="name">
-                  <search-icon class="dark"/>
-                  <search-icon class="blue"/>
+                  <search-icon class="dark" />
+                  <search-icon class="blue" />
                   详情页加载很慢？
                 </div>
                 <div class="desc">
@@ -352,8 +394,8 @@ import SearchIcon from "./search-icon.vue";
             <div class="question-wrapper">
               <div class="question">
                 <div class="name">
-                  <search-icon class="dark"/>
-                  <search-icon class="blue"/>
+                  <search-icon class="dark" />
+                  <search-icon class="blue" />
                   为什么有的「楼中楼」回复指定了楼层还是不正确？
                 </div>
                 <div class="desc">
@@ -402,6 +444,28 @@ import SearchIcon from "./search-icon.vue";
       white-space: pre-wrap;
       color: var(--vp-c-text-2);
     }
+  }
+
+  .app-img {
+    display: flex;
+    margin: 20px 0;
+    gap: 20px;
+    flex-wrap: wrap;
+
+    .item{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      font-size: 20px;
+    }
+    img{
+      width: 360px;
+      border: 1px solid darkgrey;
+      border-radius: 10px;
+    }
+
   }
 
   .actions {

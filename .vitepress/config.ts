@@ -16,7 +16,7 @@ export default defineConfig({
         text: '简介',
         items: [
           {text: '安装到PC浏览器', link: '/pc-install'},
-          {text: '安装到手机浏览器', link: '/mobile-install'}
+          {text: '安装到手机', link: '/mobile-install'}
         ]
       }
     ],
